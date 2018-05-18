@@ -1,0 +1,43 @@
+.slider {
+    position: relative;
+    #restart {
+        //position: absolute;
+        left: 0;
+        top: 0;
+        cursor: pointer;
+        background-color: dimgray;
+        //background: transparent;
+        color: white;
+    }
+    .main-carousel {
+        .carousel-cell {
+            width: 100%;
+            min-height: 250px;
+            height: 50vh;
+            border-radius: 5px;
+            font-size: 50px;
+            background-size: cover;
+            img {
+                display: block;
+                width: 100%;            
+                height: auto; 
+            }     
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                p {
+                    text-align: center;
+                    text-shadow: 3px 3px 6px white;
+                }
+            }
+        }
+        .flickity-page-dots {
+            display: none;
+        }
+    }
+    .progress-bar {
+      height: 20px;
+      width: 0;
+      background: #333;
+    }
+}

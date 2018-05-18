@@ -5,14 +5,53 @@
         <title>JS - pluginy</title>
         <meta name="description" content="zadanie 10">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel = "stylesheet" type = "text/css" href = "vendor/normalize.css">
-        <link rel = "stylesheet" type = "text/css" href = "vendor/flickity.min.js.css">
+        <link rel = "stylesheet" href = "vendor/normalize.css">
+        <!--link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"-->
+        <link rel = "stylesheet" href = "vendor/flickity.min.css" media = "screen">
         <link rel = "stylesheet" type = "text/css" href = "css/style.css">
     </head>
     <body>
+
+        <div class="slider">
+            <button class="button" id="restart"> Restart </button>
+            <div class="main-carousel" data-flickity='{ "hash": true }'>
+                <div class="carousel-cell" id="carousel-cell1" style="background-image:url(https://images.pexels.com/photos/811715/pexels-photo-811715.jpeg?cs=srgb&dl=architecture-buildings-city-811715.jpg&fm=jpg)">
+                    <div class="container">
+                        <p>Paris</p>
+                    </div>
+                </div>
+                <div class="carousel-cell" id="carousel-cell2" style="background-image:url(https://images.pexels.com/photos/6502/city-capital-italy-historical.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)">
+                    <div class="container">
+                        <p>Rome</p>
+                    </div>
+                </div>
+                <div class="carousel-cell" id="carousel-cell3" style="background-image:url(https://images.unsplash.com/photo-1503780099440-e6ab046a1d71?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38e94c1a74f57d88d105acf1dbfceec5&auto=format&fit=crop&w=1406&q=80)">
+                    <div class="container">
+                        <p>London</p>
+                    </div>
+                </div>
+                <div class="carousel-cell" id="carousel-cell4" style="background-image:url(https://images.unsplash.com/photo-1508804185872-d7badad00f7d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8328e64c55562754fe9e81ae1ee3f4ed&auto=format&fit=crop&w=1350&q=80)">
+                    <div class="container">
+                        <p>Beijing</p>
+                    </div>
+                </div>
+                <div class="carousel-cell" id="carousel-cell5" style="background-image:url(https://images.unsplash.com/photo-1515914046002-dd311df399fb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=df1271d379db65aa71edfbc8f3f65340&auto=format&fit=crop&w=1350&q=80)">
+                    <div class="container">
+                        <p>Shanghai</p>
+                    </div>
+                </div>
+                <div class="carousel-cell" id="carousel-cell6" style="background-image:url(https://images.unsplash.com/photo-1485086806232-72035a9f951c?ixlib=rb-0.3.5&s=f855af38e90829aaadac466c244b0a6c&auto=format&fit=crop&w=675&q=80)">
+                    <div class="container">
+                        <p>Dubai</p>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bar"></div>
+        </div>
+
         
-        
-        <script src="/path/to/flickity.pkgd.min.js"></script>
-        <script src="script.js"></script>
+        <script src="vendor/flickity.pkgd.min.js"></script>
+        <script src="vendor/flickity-hash.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
