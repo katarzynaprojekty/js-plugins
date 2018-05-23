@@ -38,7 +38,7 @@ flkty.on('scroll', function(progress) {
 window.initMap = function() {
 
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 4,
+    zoom: 6,
     center: sliderData[0].coords
   });
 
@@ -48,9 +48,9 @@ window.initMap = function() {
       position: sliderData[i].coords,
       map: map
     });
-//    marker[i].addListener('click', function() {
-//      flkty.select(i);
-//    });
+    //    marker[i].addListener('click', function() {
+    //      flkty.select(i);
+    //    });
   }
 
   marker[0].addListener('click', function() {
@@ -71,4 +71,12 @@ window.initMap = function() {
   marker[5].addListener('click', function() {
     flkty.select(5);
   });
+
+  // zadanie 10.4
+  flkty.on('change', function(index) {
+    console.log('Flickity change ' + index);
+          map.panTo(sliderData[index].coords);
+          map.setZoom(8);
+  });
+
 }
