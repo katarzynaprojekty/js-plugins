@@ -22,6 +22,11 @@
             <div class="progress-bar"></div>
         </div>
  
+        <div class="maps-container">
+            <div id="map"> </div>       
+        </div>
+        
+        
         
         <script id="template-product-item" type="x-tmpl-mustache">
            <div class="carousel-cell" id="{{id}}">   
@@ -40,37 +45,43 @@
                 image: "https://images.pexels.com/photos/811715/pexels-photo-811715.jpeg?cs=srgb&dl=architecture-buildings-city-811715.jpg&fm=jpg",
                 title: 'Paris',
                 description: 'opis1',
-                id: 'carousel-cell1'
+                id: 'carousel-cell1',
+                coords: {lat: 48.86, lng: 2.35}
             },
             {
                 image: "https://images.pexels.com/photos/6502/city-capital-italy-historical.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
                 title: 'Rome',
                 description: 'opis2',
-                id: 'carousel-cell2'
+                id: 'carousel-cell2',
+                coords: {lat: 41.90, lng: 12.50}
             },
             {
                 image: "https://images.unsplash.com/photo-1503780099440-e6ab046a1d71?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38e94c1a74f57d88d105acf1dbfceec5&auto=format&fit=crop&w=1406&q=80",
                 title: 'London',
                 description: 'opis3',
-                id: 'carousel-cell3'
+                id: 'carousel-cell3',
+                coords: {lat: 51.51, lng: -0.13}
             },
             {
                 image: "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8328e64c55562754fe9e81ae1ee3f4ed&auto=format&fit=crop&w=1350&q=80",
                 title: 'Beijing',
                 description: 'opis4',
-                id: 'carousel-cell4'
+                id: 'carousel-cell4',
+                coords: {lat: 39.90, lng: 116.41}
             },
             {
                 image: "https://images.unsplash.com/photo-1515914046002-dd311df399fb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=df1271d379db65aa71edfbc8f3f65340&auto=format&fit=crop&w=1350&q=80",
                 title: 'Shanghai',
                 description: 'opis5',
-                id: 'carousel-cell5'
+                id: 'carousel-cell5',
+                coords: {lat: 31.23, lng: 121.47}
             },
             {
-                image: "https://images.unsplash.com/photo-1485086806232-72035a9f951c?ixlib=rb-0.3.5&s=f855af38e90829aaadac466c244b0a6c&auto=format&fit=crop&w=675&q=80",
+                image: "https://images.unsplash.com/photo-1507318069136-ee091b2f26cb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=56f9a41c1ef60e007f03980ed5eaea1a&auto=format&fit=crop&w=1350&q=80",
                 title: 'Dubai',
                 description: 'opis6',
-                id: 'carousel-cell6'
+                id: 'carousel-cell6',
+                coords: {lat: 25.20, lng: 55.27}
             }
         ];
         </script>
@@ -84,5 +95,6 @@
         <script src="vendor/flickity-hash.js"></script>
         <script src="vendor/mustache.js"></script>
         <script src="js/script.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt9XUzjcfywiqBZYvFM-RnN6s9oTvQhzM&callback=initMap"></script>
     </body>
 </html>
