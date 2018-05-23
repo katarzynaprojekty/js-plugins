@@ -1,13 +1,15 @@
 .slider {
-    position: relative;
-    #restart {
-        //position: absolute;
-        left: 0;
-        top: 0;
-        cursor: pointer;
-        background-color: dimgray;
-        //background: transparent;
-        color: white;
+    .buttonRestart {
+        position: relative;
+        #restart {
+            //position: absolute;
+            left: 0;
+            top: 0;
+            cursor: pointer;
+            background-color: dimgray;
+            background: transparent;
+            color: royalblue;
+        }
     }
     .main-carousel {
         .carousel-cell {
@@ -17,18 +19,20 @@
             border-radius: 5px;
             font-size: 50px;
             background-size: cover;
+            position: relative;
             img {
                 display: block;
                 width: 100%;            
                 height: auto; 
             }     
             .container {
-                max-width: 1200px;
+                position: absolute;
+                top: 0;               
                 margin: 0 auto;
-                p {
-                    text-align: center;
-                    text-shadow: 3px 3px 6px white;
-                }
+                width: 50%;
+                right: 25%;
+                text-align: center;
+                text-shadow: 3px 3px 6px white;
             }
         }
         .flickity-page-dots {

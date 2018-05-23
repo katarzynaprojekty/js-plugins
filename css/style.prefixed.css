@@ -1,13 +1,14 @@
-.slider {
+.slider .buttonRestart {
   position: relative;
 }
 
-.slider #restart {
+.slider .buttonRestart #restart {
   left: 0;
   top: 0;
   cursor: pointer;
   background-color: dimgray;
-  color: white;
+  background: transparent;
+  color: royalblue;
 }
 
 .slider .main-carousel .carousel-cell {
@@ -17,6 +18,7 @@
   border-radius: 5px;
   font-size: 50px;
   background-size: cover;
+  position: relative;
 }
 
 .slider .main-carousel .carousel-cell img {
@@ -26,11 +28,11 @@
 }
 
 .slider .main-carousel .carousel-cell .container {
-  max-width: 1200px;
+  position: absolute;
+  top: 0;
   margin: 0 auto;
-}
-
-.slider .main-carousel .carousel-cell .container p {
+  width: 50%;
+  right: 25%;
   text-align: center;
   text-shadow: 3px 3px 6px white;
 }
