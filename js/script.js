@@ -43,34 +43,19 @@ window.initMap = function() {
   });
 
   var marker = [];
-  for (var i = 0; i < sliderData.length; i++) {
+  for (let i = 0; i < sliderData.length; i++) {
     marker[i] = new google.maps.Marker({
       position: sliderData[i].coords,
+      value: i,
       map: map
     });
-    //    marker[i].addListener('click', function() {
-    //      flkty.select(i);
-    //    });
+        marker[i].addListener('click', function() {
+//            let t = i;
+//            flkty.select(t);
+            flkty.select(this.value);
+        });
+      
   }
-
-  marker[0].addListener('click', function() {
-    flkty.select(0);
-  });
-  marker[1].addListener('click', function() {
-    flkty.select(1);
-  });
-  marker[2].addListener('click', function() {
-    flkty.select(2);
-  });
-  marker[3].addListener('click', function() {
-    flkty.select(3);
-  });
-  marker[4].addListener('click', function() {
-    flkty.select(4);
-  });
-  marker[5].addListener('click', function() {
-    flkty.select(5);
-  });
 
   // zadanie 10.4
   flkty.on('change', function(index) {
